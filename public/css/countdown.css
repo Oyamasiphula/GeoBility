@@ -1,0 +1,115 @@
+/* Font Awesome */
+
+@import url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+/* Roboto Condensed */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+.timer {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #3B3A3F;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+#progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 1s ease-in-out;
+}
+
+p {
+  margin: 0;
+  color: #00CE9B;
+  font-weight: 700;
+}
+
+#result {
+  padding: 60px 0 0;
+  font-size: 80px;
+  line-height: 60px;
+}
+
+#sec {
+  font-size: 28px;
+}
+
+#start,
+#stop {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#start {
+  background: #4897F0;
+}
+
+#start:hover {
+  background: #4087d8;
+}
+
+#stop {
+  background: #00CE9B;
+}
+
+#stop:hover {
+  background: #00b98b;
+}
+
+#start:active,
+#stop:active {
+  top: 1px;
+}
+
+#plus {
+  width: 100%;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  color: #aaa;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: FontAwesome, sans-serif;
+}
+
+#minus {
+  width: 100%;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  color: #aaa;
+  background: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: FontAwesome, sans-serif;
+}
+
+#pm {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  opacity: .1;
+  z-index: 9999;
+}
+
+.timer:hover > #pm {
+  opacity: 1;
+}
+
+.buttons {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+}
