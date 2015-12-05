@@ -122,14 +122,14 @@
           <th>Registration number</th>
           <th>Speed</th>
           <th>Date</th>
-          <th></th>
+          <th>Manage</th>
           {{#issues}}
             <tr>
           <td>{{description}}</td>
           <td>{{reg_number}}</td>
           <td>{{speed}}</td>
           <td>{{Date}}</td>
-           <td ><a href="/issues/edit/{{Id}}" class ="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+         <td ><a href="/issues/edit/{{Id}}" class ="btn btn-success"><span class="fa fa-pencil-square-o"></span> Edit</a></td>
            <!--<td ><a href="/issues/delete/{{Id}}" class="btn btn-danger">
               <span class="glyphicon glyphicon-remove"></span>
               Delete
