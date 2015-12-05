@@ -165,8 +165,8 @@ button {
   padding: 30px 20px;
 }
 .panel .panel-element {
-    position: relative;
-    background-color: black;
+        position: relative;
+    background-color: #969398;
 }
 .panel .panel-element .element-content {
     background-color: #00967F;
@@ -198,11 +198,11 @@ button {
   background-color: #F9F9F9;
 }
 .panel .panel-element .element-content .content-post .post-avatar {
-  background-color: #ededed;
-  width: 60px;
-  height: 60px;
-  float: left;
-  border-radius: 50%;
+    background-color: #00ceb8;
+    width: 60px;
+    height: 60px;
+    float: left;
+    border-radius: 50%;
 }
 .panel .panel-element .element-content .content-post .post-content {
   margin-left: 75px;
@@ -248,7 +248,7 @@ button {
   font-size: 20px;
 }
 .panel .panel-element .element-actions .btn-action.btn-hide {
-  border-color: #34495e;
+  border-color: #ff4a56;
 }
 .panel .panel-element .element-actions .btn-action.btn-hide > i {
   color: #34495e;
@@ -257,13 +257,13 @@ button {
   background-color: #34495e;
 }
 .panel .panel-element .element-actions .btn-action.btn-heart {
-  border-color: #e74c3c;
+  border-color: #208A0D;
 }
 .panel .panel-element .element-actions .btn-action.btn-heart > i {
-  color: #e74c3c;
+  color: #59AF67;
 }
 .panel .panel-element .element-actions .btn-action.btn-heart:hover {
-  background-color: #e74c3c;
+  background-color: #59AF67;
 }
 .panel .panel-element .element-actions .btn-action:not(:last-child) {
   margin-right: 10px;
@@ -287,7 +287,7 @@ button {
   display: inline-block;
 }
 .panel .panel-element.panel-element-hearted .element-actions .btn-action.btn-heart {
-  background-color: #e74c3c;
+  background-color: #59AF67;
 }
 .panel .panel-element.panel-element-hearted .element-actions .btn-action.btn-heart > i {
   color: #fff;
@@ -296,7 +296,7 @@ button {
   opacity: 1;
 }
 .panel .panel-element.panel-element-hearted .element-content .btn-more > i {
-  color: #e74c3c;
+  color: #59AF67;
 }
 .panel .panel-element.panel-element-hearted .element-content .btn-more .icon-open,
 .panel .panel-element.panel-element-hearted .element-content .btn-more .icon-closed {

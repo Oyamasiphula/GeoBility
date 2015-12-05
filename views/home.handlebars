@@ -12,7 +12,7 @@
             
             <li><a href="/issues/getIssues">Trip History</a></li>
 >>>>>>> b4d517cd0837dd696935ea8eff82366c440b77b8 -->
-            <li><a href="#features">Rank Manager</a></li>
+            <li><a href="#features" Posted Comments</a></li>
             <li><a href="#team">Development Team</a></li>
         </ul>
     </nav>
@@ -115,7 +115,7 @@
           </h1></div>
       </section>
       <section class="row">
-        <h2>Issues</h2>
+        <h2>Recent Comments</h2>
         <div class="table-responsive">
         <table class ="table" id = "Issues">
           <th>Description</th>
@@ -125,16 +125,15 @@
           <th></th>
           {{#issues}}
             <tr>
-        
-              <td>{{description}}</td>
-              <td>{{reg_number}}</td>
-              <td>{{speed}}</td>
-              <td>{{Date}}</td>
-               <td ><a href="/issues/edit/{{Id}}" class ="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
-               <!--<td ><a href="/issues/delete/{{Id}}" class="btn btn-danger">
-                  <span class="glyphicon glyphicon-remove"></span>
-                  Delete
-                </a></td > -->
+          <td>{{description}}</td>
+          <td>{{reg_number}}</td>
+          <td>{{speed}}</td>
+          <td>{{Date}}</td>
+           <td ><a href="/issues/edit/{{Id}}" class ="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</a></td>
+           <!--<td ><a href="/issues/delete/{{Id}}" class="btn btn-danger">
+              <span class="glyphicon glyphicon-remove"></span>
+              Delete
+            </a></td > -->
             </tr>
           {{/issues}}
           {{#no_issues}}
@@ -150,7 +149,7 @@
     </section>
   </section>
  
-    <!-- ****************************** Rank Manager Section ************************** -->
+    <!-- ****************************** Posted Comments Section ************************** -->
 
 <section id="features" class="block">
   <section class="container">
@@ -158,7 +157,7 @@
       <div class="title-box"><h1 class="block-title wow animated rollIn">
         <span class="bb-top-left"></span>
         <span class="bb-bottom-left"></span>
-          Rank manager
+           Posted Comments
         <span class="bb-top-right"></span>
         <span class="bb-bottom-right"></span>
       </h1></div>
@@ -172,13 +171,13 @@
           <div class="panel-element">
             <div class="element-actions">
               <button class="btn btn-action btn-hide"><i class="fa fa-ban"></i></button>
-              <button class="btn btn-action btn-heart"><i class="fa fa-heart-o"></i></button>
+              <button class="btn btn-action btn-heart"><i class="fa fa-check-circle-o fa-2"></i></button>
             </div>
             <div class="element-content">
               <button class="btn btn-more">
               <i class="fa fa fa-reply icon-closed"></i>
               <i class="fa fa-times icon-open"></i>
-              <i class="fa fa-heart-o icon-hearted"></i>
+              <i class="fa fa-check-circle-o fa-2 icon-hearted"></i>
               </button>
               <div class="content-post">
                 <div class="post-avatar"></div>
@@ -251,7 +250,7 @@
                 <div class="title-box"><h1 class="block-title wow animated rollIn">
                 <span class="bb-top-left"></span>
                 <span class="bb-bottom-left"></span>
-                Rank manager
+                Posted Comments
                 <span class="bb-top-right"></span>
                 <span class="bb-bottom-right"></span>
                 </h1></div>
@@ -262,13 +261,13 @@
     <div class="panel-element">
         <div class="element-actions">
             <button class="btn btn-action btn-hide"><i class="fa fa-ban"></i></button>
-            <button class="btn btn-action btn-heart"><i class="fa fa-heart-o"></i></button>
+            <button class="btn btn-action btn-heart"><i class="fa-check-circle-o"></i></button>
         </div>
         <div class="element-content">
                 <button class="btn btn-more">
                     <i class="fa fa fa-reply icon-closed"></i>
                     <i class="fa fa-times icon-open"></i>
-                    <i class="fa fa-heart-o icon-hearted"></i>
+                    <i class="fa-check-circle-o icon-hearted"></i>
                 </button>
             <div class="content-post">
                 <div class="post-avatar"></div>
