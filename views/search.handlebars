@@ -1,0 +1,24 @@
+<div class="panel" id="searchp">
+        {{#issues}}
+          <div class="panel-element">
+            <div class="element-actions">
+              <button class="btn btn-action btn-hide"><i class="fa fa-ban"></i></button>
+              <button class="btn btn-action btn-heart"><i class="fa fa-heart-o"></i></button>
+            </div>
+            <div class="element-content">
+              <button class="btn btn-more">
+              <i class="fa fa fa-reply icon-closed"></i>
+              <i class="fa fa-times icon-open"></i>
+              <i class="fa fa-heart-o icon-hearted"></i>
+              </button>
+              <div class="content-post">
+                <div class="post-avatar"></div>
+                <div class="post-content">
+                  <span class="post-title">{{Rank_name}}</span>
+                  <p class="post-body">{{description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/issues}}
+</div>

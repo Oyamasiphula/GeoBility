@@ -5,15 +5,57 @@ var timer, stopTimer,
     stop   = document.getElementById('stop'),
     plus   = document.getElementById('plus'),
     minus  = document.getElementById('minus'),
+    speedElement= document.getElementById('speed'),
     n      = +result.innerHTML;
+
+
+function getLocation(id, cb) {
+
+        var location = document.getElementById(id);
+
+        if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position){
+
+                cb({
+                  latitude : position.coords.latitude,
+                  longitude : position.coords.longitude,
+                  time : Date.now()
+                });
+
+                });
+        } 
+        else { 
+                location.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    };
   
 // events
 start.addEventListener('click', function() {
-  startTimer(n);
+
+  getLocation("demo1", function(coords){
+    startLocation = coords;
+    startTimer(n);
+  });
+
+  
 }, false);
 
 stop.addEventListener('click', function() {
-  stopTimer();
+  
+
+  getLocation("demo2", function(coords){
+          var endLocation = coords;
+          
+          var speed = geolib.getSpeed(startLocation, endLocation);
+          var demo1 = document.getElementById("demo1");
+          demo1.innerHTML = speed + "km/h";
+          
+          speedElement.value = speed;
+
+          stopTimer();        
+
+        });
+
 }, false);
 
 plus.addEventListener('click', function() {
@@ -68,3 +110,23 @@ function startTimer(n) {
   }, 1000); // every sec
 
 }
+
+
+
+
+var location1 = document.getElementById("demo1");
+    
+                
+
+    var startButton = document.getElementById("start");
+    var stopButton = document.getElementById("stop");
+    
+    var startLocation;
+
+    startButton.addEventListener('click', function(){
+        
+    });
+
+    stopButton.addEventListener('click', function(){
+        
+    });

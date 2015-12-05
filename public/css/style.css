@@ -321,8 +321,7 @@ a:hover {
 /////////////////////////////////////////////////////////////////////*/
 
 #banner {
-    background: url('http://i.imgur.com/Lj4DLLF.png');
-    background-size: cover;
+    
     padding-top: 80px;
     background-attachment: fixed;
     position: relative;
@@ -471,6 +470,7 @@ a:hover {
 }
 .team-member p {
     padding: 10px 10px 15px 10px;
+    font-size: initial;
 }
 .team-member h2 {
     font-size: 25px;
