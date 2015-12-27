@@ -26,13 +26,13 @@ exports.add = function (req, res, next) {
             start_location_longitude :input.longitude,
             start_location_time:input.time
             
-            //end_location_latitude:input.latitude,
-            //end_location_longitude: input.longitudes,
-            //end_location_time: input.time,
-            //start_location_longitude : input.latitude, 
-            //end_location_id : input.latitude,
-            //taxiAssociation_name : input.taxiAssociation_name,
-            //Rank_name: input.Rank_name
+            // end_location_latitude:input.latitude,
+            // end_location_longitude: input.longitudes,
+            // end_location_time: input.time,
+            // start_location_longitude : input.latitude, 
+            // end_location_id : input.latitude,
+            // taxiAssociation_name : input.taxiAssociation_name,
+            // Rank_name: input.Rank_name
 
         };      
              

@@ -71,19 +71,7 @@ app.post('/api/issues', function(req, res, next){
 		var data = {
 
       		description : input.description,
-      		date :input.date,
-      		//start_location_latitude : input.latitude,
-      		//start_location_longitude :input.longitude,
-      		//start_location_time:input.time
-      		
-      		//end_location_latitude:input.latitude,
-      		//end_location_longitude: input.longitudes,
-      		//end_location_time: input.time,
-            //start_location_longitude : input.latitude, 
-            //end_location_id : input.latitude,
-            //taxiAssociation_name : input.taxiAssociation_name,
-            //Rank_name: input.Rank_name
-
+      		date :input.date
   	    };      
 		connection.query('insert into Issues set ?', data, function(err, results){
   		    if (err) return next(err);

@@ -24,6 +24,7 @@ exports.show =function (req, res, next){
 
                 if (err) return next(err);
             connection.query('SELECT * from Ranks',[], function(err, results){
+                console.log(results)
             	if (err) return next(err);
                 // console.log(issues.length);
                 res.render('home',{
@@ -40,7 +41,7 @@ exports.getIssues =function (req, res, next){
         if (err) 
                 return next(err);
     
-        connection.query('SELECT Issues.Id,Issues.description,Issues.speed, reg_number, taxiAssociation_name,Ranks.Rank_name,DATE_FORMAT(Issues.date, "%d/%m/%Y") as Date,Issues.rank_id FROM Issues INNER JOIN Taxi_associations ON Issues.association_id = Taxi_associations.id INNER JOIN Ranks ON Issues.rank_id = Ranks.id ORDER BY Issues.date DESC',[],function(err, issuesresults){
+        connection.query('SELECT Issues.id,Issues.description,Issues.speed, Issues.reg_number, Taxi_associations.taxiAssociation_name, Ranks.Rank_name,DATE_FORMAT(Issues.date, "%d/%m/%Y") as Date, Issues.rank_id FROM Issues INNER JOIN Taxi_associations ON Issues.association_id = Taxi_associations.association_id INNER JOIN Ranks ON Issues.rank_id = Ranks.rank_id ORDER BY Issues.date ASC',[],function(err, issuesresults){
         if (err) 
                 return next(err);
 
@@ -52,8 +53,6 @@ exports.getIssues =function (req, res, next){
     
 }
 
-
-
 exports.add = function (req, res, next) {
     req.getConnection(function(err, connection){
 
@@ -62,7 +61,7 @@ exports.add = function (req, res, next) {
         var data = {
             description : input.description,
             date :input.date,
-            rank_name:input.rank_name,
+            rank_id:input.rank_id,
             reg_number:input.reg_number,
             speed : input.speed,
             association_id : input.association_id

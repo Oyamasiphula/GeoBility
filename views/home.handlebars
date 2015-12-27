@@ -6,13 +6,8 @@
         <a id="menu-close" href="#" class="close-btn toggle"><i class="ion-ios-close-empty"></i></a>
         <ul class="sidebar-nav">
             <li><a href="#gallery">Home</a></li>
-
             <li><a href="#banner">Trips History</a></li>
-<!-- =======
-            
-            <li><a href="/issues/getIssues">Trip History</a></li>
->>>>>>> b4d517cd0837dd696935ea8eff82366c440b77b8 -->
-            <li><a href="#features" Posted Comments</a></li>
+            <li><a href="#features">Posted Comments</a></li>
             <li><a href="#team">Development Team</a></li>
         </ul>
     </nav>
@@ -30,7 +25,6 @@
 
     <!-- ****************************** Banner ************************** -->
 
-
   <section id="gallery" class="block">
     <section class="container">
       <section class="row">
@@ -47,6 +41,7 @@
           <h1>Add new complaint</h1>
           <div class="timer">
             <div id="pm">
+              <input type="hidden" name="now()" value="{{date}}"/>
               <input type="button" id="plus" value="&#xf0de;">
               <input type="button" id="minus" value="&#xf0dd;">
             </div>
@@ -65,20 +60,7 @@
             <input type="button"  id="start" value="Start">
             <input type="button"  id="stop" value="Stop">
           </div> 
-   
-<!-- progress bar -->
-    </div>
-       <!-- <div id = "results1">
-        <p id="demo1"></p><br/>
-        </div>
-        <div id = "results2">
-            <p id="demo2"></p>
-        </div>
-        <div class="buttons">
-          <input type="button"  id="start" value="Start">
-          <input type="button"  id="stop" value="Stop">
-        </div>   -->                  
-
+       </div>
           <div class="question">
             <input type="text" name="reg_number" required/>
             <label>Taxi registration number</label>
@@ -88,10 +70,10 @@
           <input type = "hidden" value="1" name ="association_id">
           <input type = "hidden" value="1" name ="rank_id">
           <input type ="hidden"  name="speed" id="speed">
-          <div class="question">
+          <!-- <div class="question">
             <input type="text" name="rank_name" required/>
             <label>Rank</label>
-          </div>
+          </div> -->
           <div class="question">
             <input type="text" name="description" required/>
             <label>Comment</label>
