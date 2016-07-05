@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `Issues` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `description` varchar(100) DEFAULT NULL,
   `date` date DEFAULT NULL,
+  `reg_number` varchar(100) NOT NULL,  
   `association_id` int(100) DEFAULT NULL,
   `rank_id` int(100) DEFAULT NULL,
   `start_location_latitude` decimal(20,10) DEFAULT NULL,
@@ -48,13 +49,13 @@ CREATE TABLE IF NOT EXISTS `Issues` (
 -- Dumping data for table `Issues`
 --
 
-INSERT INTO `Issues` (`id`, `description`, `date`, `association_id`, `rank_id`, `start_location_latitude`, `start_location_longitude`, `start_location_time`, `end_location_latitude`, `end_location_longitude`, `end_location_time`, `speed`) VALUES
-(1, 'overspending', '2015-12-03', 3, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 33),
-(2, 'over speeding', '2015-12-16', 1, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 900),
-(3, 'reckless driving', '2015-06-17', 1, 1, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 55),
-(4, 'over speeding', '2015-11-11', 2, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 4),
-(5, 'alcohol driving limit', '2015-12-24', 2, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 59),
-(6, 'over speeding', '2015-12-08', 3, 6, -88.0000000000, 42.0000000000, 9223372036854775807, NULL, NULL, NULL, 120);
+INSERT INTO `Issues` (`id`, `description`, `date`,`reg_number`, `association_id`, `rank_id`, `start_location_latitude`, `start_location_longitude`, `start_location_time`, `end_location_latitude`, `end_location_longitude`, `end_location_time`, `speed`) VALUES
+(1, 'overspending', '2015-12-03','CJ 32 21312', 3, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 33),
+(2, 'over speeding', '2015-12-16','CK 32332 12', 1, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 900),
+(3, 'reckless driving', '2015-06-17','CJ 3233 312', 1, 1, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 55),
+(4, 'over speeding', '2015-11-11','CJ 33 21312', 2, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 4),
+(5, 'alcohol driving limit', '2015-12-24','CF 33 2562', 2, 3, -88.0000000000, 42.0000000000, 9223372036854775807, -88.0000000000, 42.0000000000, 9223372036854775807, 59),
+(6, 'over speeding', '2015-12-08','CF 65 2562', 3, 6, -88.0000000000, 42.0000000000, 9223372036854775807, NULL, NULL, NULL, 120);
 
 -- --------------------------------------------------------
 
