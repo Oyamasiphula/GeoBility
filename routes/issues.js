@@ -62,7 +62,7 @@ exports.add = function (req, res, next) {
             description : input.description,
             date :input.date,
             rank_id:input.rank_id,
-            reg_number:input.reg_number,
+            // reg_number:input.reg_number,
             speed : input.speed,
             association_id : input.association_id
         };      
